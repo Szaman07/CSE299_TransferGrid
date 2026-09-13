@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Locally generated experiment artifacts
+checkpoints/
+experiments/
+logs/
+reports/
+replays/output/
+
+# Temporary files and notebook state
+.tmp/
+tmp/
+*.log
+.ipynb_checkpoints/

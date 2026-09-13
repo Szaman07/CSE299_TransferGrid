@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TransferGrid is a local workbench for inspectable PPO experiments in MiniGrid.">
+  <title>TransferGrid — PPO experiments, one workbench</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#top">TransferGrid</a>
+    <nav><a href="#workflows">Workflows</a><a href="#architecture">Architecture</a><a href="https://github.com/Szaman07/CSE299_TransferGrid">GitHub ↗</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Local reinforcement-learning workbench</p>
+        <h1>PPO experiments without the notebook juggling.</h1>
+        <p class="lead">Train, evaluate, transfer and replay MiniGrid policies through one focused interface.</p>
+        <a class="button" href="https://github.com/Szaman07/CSE299_TransferGrid#run-locally">Run locally ↗</a>
+      </div>
+      <img src="assets/workbench.png" alt="TransferGrid Compact Workbench showing Train, Evaluate, Transfer and Replay">
+    </section>
+    <section id="workflows">
+      <p class="eyebrow">Four connected workflows</p>
+      <div class="cards">
+        <article><h2>Train</h2><p>Launch PPO in an isolated process with an explicit task, seed and budget.</p></article>
+        <article><h2>Evaluate</h2><p>Inspect a saved checkpoint through deterministic validation episodes.</p></article>
+        <article><h2>Transfer</h2><p>Copy a policy or reset selected actor–critic components before target training.</p></article>
+        <article><h2>Replay</h2><p>Step through recorded behavior with playback and frame controls.</p></article>
+      </div>
+    </section>
+    <section class="architecture" id="architecture">
+      <div><p class="eyebrow">Built for inspection</p><h2>UI state, workers and artifacts stay separate.</h2><p>Environment construction is shared across previews, training, evaluation and replay. Saved checkpoints remain bound to their configuration and provenance metadata.</p></div>
+      <img src="assets/architecture.png" alt="TransferGrid application architecture">
+    </section>
+  </main>
+  <footer>TransferGrid · local-first · MIT licensed</footer>
+</body>
+</html>

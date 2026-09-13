@@ -1,0 +1,18 @@
+{
+  "action_contract_id": "minigrid-discrete7-v1",
+  "default_grid_size": 7,
+  "max_steps_formula": "4 * grid_size^2",
+  "minimum_grid_size": 7,
+  "mission": "pick up the yellow key, unlock the yellow door, and reach the goal",
+  "objects": {
+    "door": {"color": "yellow", "count": 1, "locked": true},
+    "goal": {"color": "green", "count": 1},
+    "key": {"color": "yellow", "count": 1}
+  },
+  "observation_contract_id": "minigrid-egocentric-flat148-v1",
+  "room": "outer-walls-and-vertical-divider",
+  "sampling": "legacy-object-interaction-seeded-choice-v1",
+  "task_id": "door_key-v1",
+  "terminal_success": "agent-enters-goal",
+  "version": 1
+}

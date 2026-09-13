@@ -1,0 +1,29 @@
+{
+  "action_contract_id": "minigrid-discrete7-v1",
+  "agent_key_distinct": true,
+  "grid_size": 7,
+  "layout_index_transform": {
+    "stratum": "agent-direction",
+    "stratum_offset": 97,
+    "stratum_size": 195,
+    "support_basis": "key_pickup-v1-canonical-support",
+    "type": "direction-stratified-cyclic-permutation"
+  },
+  "max_steps": 196,
+  "minimum_oracle_actions": 6,
+  "mission": "pick up the yellow key",
+  "objects": {
+    "key": {
+      "color": "yellow",
+      "count": 1
+    }
+  },
+  "observation_contract_id": "minigrid-egocentric-flat148-v1",
+  "sampling": "uniform-enumerated-valid-tuples-with-decoupled-seed-map",
+  "supersedes": "key_pickup-v1",
+  "task_id": "key_pickup-v2",
+  "terminal_failure": "invalid-environment-invariant-only",
+  "terminal_success": "yellow-key-becomes-carried-object",
+  "tuple_support_size": 780,
+  "version": 2
+}

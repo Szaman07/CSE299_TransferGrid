@@ -1,0 +1,19 @@
+{
+  "action_contract_id": "minigrid-discrete7-v1",
+  "barrier_coordinates": [2, 3, 4],
+  "barrier_orientations": ["horizontal", "vertical"],
+  "failure_reason": "lava",
+  "grid_size": 7,
+  "lava_count": 4,
+  "max_steps": 196,
+  "minimum_oracle_actions": 8,
+  "mission": "cross the lava barrier through the safe gap and reach the goal",
+  "observation_contract_id": "minigrid-egocentric-flat148-v1",
+  "safe_gap_count": 1,
+  "sampling": "uniform-enumerated-valid-tuples",
+  "support_size": 14104,
+  "task_id": "lava_navigation-v1",
+  "terminal_failure": "agent-enters-lava",
+  "terminal_success": "agent-enters-goal",
+  "version": 1
+}

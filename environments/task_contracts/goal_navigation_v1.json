@@ -1,0 +1,16 @@
+{
+  "action_contract_id": "minigrid-discrete7-v1",
+  "agent_goal_distinct": true,
+  "grid_size": 7,
+  "max_steps": 196,
+  "minimum_oracle_actions": 6,
+  "mission": "reach the green goal",
+  "objects": {"goal": {"color": "green", "count": 1}},
+  "observation_contract_id": "minigrid-egocentric-flat148-v1",
+  "sampling": "uniform-enumerated-valid-tuples",
+  "task_id": "goal_navigation-v1",
+  "terminal_failure": "invalid-environment-invariant-only",
+  "terminal_success": "agent-enters-goal",
+  "tuple_support_size": 780,
+  "version": 1
+}

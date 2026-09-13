@@ -1,0 +1,62 @@
+{
+  "action_contract_id": "minigrid-discrete7-v1",
+  "door": {
+    "color": "yellow",
+    "initial_state": "locked-closed",
+    "not_on_river": true,
+    "sole_chamber_entrance": true
+  },
+  "enumeration": {
+    "agent_positions_per_source_side": 10,
+    "direction_count": 4,
+    "distinct_key_positions_per_agent": 9,
+    "eligible_gaps_per_chamber": 3,
+    "filter": "exact-product-state-shortest-success-actions>=16",
+    "filtered_support_size": 3800,
+    "raw_product_size": 8640,
+    "sampling": "uniform-single-draw-from-enumerated-filtered-support",
+    "sampling_probability": "1/3800",
+    "template_count": 24
+  },
+  "failure_reason": "lava",
+  "geometry": {
+    "added_chamber_wall_count": 2,
+    "chamber": "one-cell far-target-corner chamber; goal and boundary-aligned door form the outer half of a 2x2 template, with its two inward cells occupied by walls",
+    "grid_size": 7,
+    "river": {
+      "coordinate": 3,
+      "gap_count": 1,
+      "interior_span": 5,
+      "lava_count": 4,
+      "orientations": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    "source_sides": {
+      "horizontal": [
+        "north",
+        "south"
+      ],
+      "vertical": [
+        "west",
+        "east"
+      ]
+    }
+  },
+  "max_steps": 196,
+  "minimum_oracle_actions": 16,
+  "mission": "pick up the yellow key, cross the safe river gap, unlock the yellow door, and reach the goal",
+  "observation_contract_id": "minigrid-egocentric-flat148-v1",
+  "required_sequence": [
+    "acquire-key",
+    "cross-safe-river-gap",
+    "unlock-open-chamber-door",
+    "enter-goal"
+  ],
+  "task_id": "lava_door_key-v2",
+  "terminal_failure": "agent-enters-any-river-lava-cell",
+  "terminal_success": "agent-enters-goal",
+  "timeout_gate": "maximum-oracle-actions<98",
+  "version": 2
+}
